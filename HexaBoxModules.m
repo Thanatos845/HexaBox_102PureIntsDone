@@ -9,12 +9,14 @@ LinSysAna=ReadList[FileNameJoin[{Directory[],"files/LinearSystem.txt"}]];
 allMIs=ReadList[FileNameJoin[{Directory[],"files/G60Masters.txt"}]];
 invariants={d,mt2,s12,s123,s16,s23,s234,s34,s345,s45,s56};
 
-InvariantsConvChange={p1s->s56,s12->s123,s23->s34,s34->s23,s45->s12,s15->s234};
+(*InvariantsConvChange={p1s->s56,s12->s123,s23->s34,s34->s23,s45->s12,s15->s234};
 tr5Exp = Sqrt[(-s12*s15 + s12*s23 + p1s*s34 + s15*s45 -s34*s45 -s23*s34)^2 - 4*s23*s34*s45*(p1s - s12 - s15 + s34)]/.InvariantsConvChange; (* \sqrt{\Delta_5}*)
 sqrtG3Exp = Sqrt[p1s^2 + (s23 - s45)^2 - 2*p1s*(s23 + s45)]/.InvariantsConvChange;
 
 invariantConvChange={s23->s345,s45->s12,s15->s16,mTsq->mt2};
-sqrtG3DB=Sqrt[(-mTsq+s23-s45)^2-4 mTsq s45]/.invariantConvChange;
+sqrtG3DB=Sqrt[(-mTsq+s23-s45)^2-4 mTsq s45]/.invariantConvChange;*)
+
+sqrtSet=ReadList[FileNameJoin[{Directory[],"files/Roots.txt"}]];
 
 Ureduce=ReadList[FileNameJoin[{Directory[],"KIRA/UReduList.txt"}]];
 
@@ -29,7 +31,7 @@ Ureduce=ReadList[FileNameJoin[{Directory[],"KIRA/UReduList.txt"}]];
 
 momenta={p[1],p[2],p[3],p[4],p[5]};
 SixPointGram=Expand[Det[Table[momenta[[i]] momenta[[j]],{i,1,5},{j,1,5}]/.kinematics/.mandelstamScalarProducts/.loopMomentumScalarProducts]];
-sqrtSet={tr5Exp,sqrtG3Exp,sqrtG3DB}/.Sqrt[x_]:>x
+(*sqrtSet={tr5Exp,sqrtG3Exp,sqrtG3DB}/.Sqrt[x_]:>x*)
 GetRandomPT[NMin_,NMax_]:=Module[{tPoint,tPointReplacements,sqrtSetT,roots,NMAXIT,s16Sol},    
     NMAXIT=1000000;
     For[i = 0, i < NMAXIT, i++,
