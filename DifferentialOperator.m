@@ -90,7 +90,7 @@ checkDifferentialOperator[tpoint_,diffop_] := Module[{diffopS,invariantsnod2,Inv
 	MatrixPlot[CheckMatrix,GridLines->Automatic,FrameTicks -> 
    {{Transpose[ArrayReshape[Append[Range[1,15],InvariantsMandsCheck]//Flatten,{2,15}]], Transpose[ArrayReshape[Append[Range[1,15],InvariantsMandsCheck]//Flatten,{2,15}]]}, {Transpose[ArrayReshape[Append[Range[1,Length[invariantsnod2]],invariantsnod2]//Flatten,{2,Length[invariantsnod2]}]], Transpose[ArrayReshape[Append[Range[1,Length[invariantsnod2]],invariantsnod2]//Flatten,{2,Length[invariantsnod2]}]]}}]//Echo;
 
-	loopMomentumScalarProducts=Get[FileNameJoin[{Directory[],"files/loopmomentum_scalarproducts.txt"}]];
+(*	loopMomentumScalarProducts=Get[FileNameJoin[{Directory[],"files/loopmomentum_scalarproducts.txt"}]];*)
 	momenta={p[1],p[2],p[3],p[4],p[5]};
 	SixPointGram=Expand[Det[Table[momenta[[i]] momenta[[j]],{i,1,5},{j,1,5}]/.kinematics/.mandelstamScalarProducts/.loopMomentumScalarProducts]];
 	

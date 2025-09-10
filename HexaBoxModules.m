@@ -39,7 +39,7 @@ GetRandomPT[NMin_,NMax_]:=Module[{tPoint,tPointReplacements,sqrtSetT,roots,NMAXI
 		tPointReplacements=Thread[Rule[DeleteElements[invariants,{s16}],tPoint]];
 		s16Sol=Solve[Expand[SixPointGram/.tPointReplacements,Modulus->$P]==0,s16,Modulus->$P];
 		If[Length[s16Sol]>0, 
-		sqrtSetT = Expand[sqrtSet /. tPointReplacements, Modulus -> $P];
+		sqrtSetT = Expand[sqrtSet /. Join[tPointReplacements,{s16Sol[[1,1]]}], Modulus -> $P];
         roots = JacobiSymbol[#, $P] & /@ sqrtSetT;
         If[Total[roots] == Length[roots],
             Return[SortBy[Join[tPointReplacements,{s16Sol[[1,1]]}],First]];];
