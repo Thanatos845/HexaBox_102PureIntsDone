@@ -1,0 +1,1 @@
+      - {topologies: [hxb], sectors: [b],r: Total[Select[$Failed, Positive]],s: -Total[Select[$Failed, Negative]],d: $Failed}

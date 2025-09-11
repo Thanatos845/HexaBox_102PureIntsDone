@@ -5,6 +5,11 @@
       - {topologies: [hxb], sectors: [b0011010100000],r: 6,s: 1,d: 2}
       - {topologies: [hxb], sectors: [b0101001100000],r: 6,s: 1,d: 2}
       - {topologies: [hxb], sectors: [b1001001100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101001110000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101000110000],r: 6,s: 0,d: 2}
+      - {topologies: [hxb], sectors: [b1101001100000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1101000100000],r: 6,s: 0,d: 2}
       - {topologies: [hxb], sectors: [b1001001000000],r: 4,s: 1,d: 1}
       - {topologies: [hxb], sectors: [b0011001000000],r: 4,s: 1,d: 1}
       - {topologies: [hxb], sectors: [b0101001000000],r: 4,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0101001010000],r: 5,s: 1,d: 1}

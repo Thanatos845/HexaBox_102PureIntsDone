@@ -1,6 +1,7 @@
       - {topologies: [hxb], sectors: [b1001001000000],r: 3,s: 0,d: 0}
       - {topologies: [hxb], sectors: [b0011001000000],r: 3,s: 0,d: 0}
       - {topologies: [hxb], sectors: [b0101001000000],r: 3,s: 0,d: 0}
+      - {topologies: [hxb], sectors: [b0101001010000],r: 4,s: 0,d: 0}
       - {topologies: [hxb], sectors: [b1001000100000],r: 3,s: 0,d: 0}
       - {topologies: [hxb], sectors: [b0101000100000],r: 5,s: 0,d: 2}
       - {topologies: [hxb], sectors: [b0011000100000],r: 5,s: 0,d: 2}
@@ -8,3 +9,5 @@
       - {topologies: [hxb], sectors: [b0011010100000],r: 5,s: 0,d: 1}
       - {topologies: [hxb], sectors: [b0101001100000],r: 5,s: 0,d: 1}
       - {topologies: [hxb], sectors: [b1001001100000],r: 5,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0101001110000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b1101001100000],r: 6,s: 0,d: 1}
