@@ -1,6 +1,34 @@
       - {topologies: [hxb], sectors: [b1001000100000],r: 5,s: 1,d: 2}
       - {topologies: [hxb], sectors: [b0101000100000],r: 6,s: 1,d: 3}
-      - {topologies: [hxb], sectors: [b0101010100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011000100000],r: 6,s: 1,d: 3}
+      - {topologies: [hxb], sectors: [b1001100100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101100100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011000110000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011001100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011010100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101001100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1001001100000],r: 6,s: 1,d: 2}
       - {topologies: [hxb], sectors: [b1001010100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101010100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011011100000],r: 6,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0101011100000],r: 6,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0101110100000],r: 6,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b1001011100000],r: 6,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b1001110100000],r: 6,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0011001110000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011010110000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101101100000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1001101100000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1001001000000],r: 5,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011001000000],r: 5,s: 1,d: 2}
       - {topologies: [hxb], sectors: [b1001010000000],r: 4,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0101001000000],r: 4,s: 1,d: 1}
       - {topologies: [hxb], sectors: [b0101010000000],r: 4,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0011000010000],r: 4,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b1001101000000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1001100000000],r: 5,s: 0,d: 2}
+      - {topologies: [hxb], sectors: [b0011001010000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011010010000],r: 5,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0011010000000],r: 4,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0101101000000],r: 5,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0101100000000],r: 4,s: 0,d: 1}
