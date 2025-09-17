@@ -18,4 +18,4 @@
       - {topologies: [hxb], sectors: [b0111001100000],r: 6,s: 0,d: 1}
       - {topologies: [hxb], sectors: [b0111010100000],r: 6,s: 0,d: 1}
       - {topologies: [hxb], sectors: [b1101010100000],r: 6,s: 0,d: 1}
-      - {topologies: [hxb], sectors: [b1011001100000],r: 5,s: 2,d: 0}
+      - {topologies: [hxb], sectors: [b1011001100000],r: 7,s: 0,d: 2}
