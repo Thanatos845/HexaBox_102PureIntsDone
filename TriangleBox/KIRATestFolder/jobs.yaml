@@ -1,0 +1,34 @@
+jobs:
+ - reduce_sectors:
+    reduce:
+      - {topologies: [hxb], sectors: [b1011001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011010110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011101100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011110100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111011100000],r: 7,s: 4,d: 1}
+      - {topologies: [hxb], sectors: [b1101011100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1101101100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1101110100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1111001100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011011100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1111010100000],r: 7,s: 3,d: 1}
+    select_integrals:
+     select_mandatory_list:
+      - {topologies: [hxb], sectors: [b1011001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011010110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011101100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011110100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111011100000],r: 7,s: 4,d: 1}
+      - {topologies: [hxb], sectors: [b1101011100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1101101100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1101110100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1111001100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011011100000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1111010100000],r: 7,s: 3,d: 1}
+    run_initiate: true
+    numerical_points: numerics
+    run_firefly: true

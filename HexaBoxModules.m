@@ -100,7 +100,9 @@ For[pos=1,pos<=Length[Sectors],pos++,
 	s=Max[-Table[Total[Select[SectorInts[[i]],Negative]],{i,1,Length[SectorInts]}]];
 	d=Max[Total[Thread[((SectorInts-1)/.( n_Integer:>0/;n<0))]]];
 	sectorString=StringForm["b``",ToString[StringJoin[Table[ToString[Sectors[[pos,i]]],{i,1,Length[Sectors[[pos]]]}]]]];
-	
+	If[ToString[sectorString]=="b1011001100000", s=3;];
+	If[ToString[sectorString]=="b1011010100000", s=3;];
+
 	file=OpenAppend[sectorpath];
 	WriteString[file,ToString[StringForm["      - {topologies: [hxb], sectors: [``],r: ``,s: ``,d: ``}\n",sectorString,r,s,d]]];
 	Close[file];

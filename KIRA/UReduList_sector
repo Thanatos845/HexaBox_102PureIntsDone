@@ -171,14 +171,15 @@
       - {topologies: [hxb], sectors: [b0101111100000],r: 7,s: 2,d: 1}
       - {topologies: [hxb], sectors: [b1001111100000],r: 7,s: 2,d: 1}
       - {topologies: [hxb], sectors: [b0101111110000],r: 7,s: 0,d: 0}
-      - {topologies: [hxb], sectors: [b0111001100000],r: 5,s: 1,d: 0}
+      - {topologies: [hxb], sectors: [b0111001100000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0111010100000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b1101010100000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b1011001100000],r: 6,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011010100000],r: 6,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b0111001110000],r: 6,s: 1,d: 0}
-      - {topologies: [hxb], sectors: [b0111010100000],r: 5,s: 1,d: 0}
       - {topologies: [hxb], sectors: [b0111010110000],r: 6,s: 1,d: 0}
       - {topologies: [hxb], sectors: [b0111011100000],r: 6,s: 1,d: 0}
       - {topologies: [hxb], sectors: [b0111011110000],r: 7,s: 1,d: 0}
-      - {topologies: [hxb], sectors: [b1011001100000],r: 5,s: 2,d: 0}
-      - {topologies: [hxb], sectors: [b1011010100000],r: 5,s: 2,d: 0}
       - {topologies: [hxb], sectors: [b1011011100000],r: 6,s: 1,d: 0}
       - {topologies: [hxb], sectors: [b1011001110000],r: 6,s: 0,d: 0}
       - {topologies: [hxb], sectors: [b1011010110000],r: 6,s: 0,d: 0}
@@ -186,7 +187,6 @@
       - {topologies: [hxb], sectors: [b1011101100000],r: 6,s: 0,d: 0}
       - {topologies: [hxb], sectors: [b1011110100000],r: 6,s: 0,d: 0}
       - {topologies: [hxb], sectors: [b1011111100000],r: 7,s: 0,d: 0}
-      - {topologies: [hxb], sectors: [b1101010100000],r: 5,s: 1,d: 0}
       - {topologies: [hxb], sectors: [b1101011100000],r: 6,s: 1,d: 0}
       - {topologies: [hxb], sectors: [b1101101100000],r: 6,s: 1,d: 0}
       - {topologies: [hxb], sectors: [b1101110100000],r: 6,s: 1,d: 0}
