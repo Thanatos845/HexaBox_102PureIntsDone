@@ -1,0 +1,14 @@
+jobs:
+ - reduce_sectors:
+    reduce:
+      - {topologies: [hxb], sectors: [b1011001100000],r: 7,s: 3,d: 2}
+    select_integrals:
+     select_mandatory_list:
+      - [UReduList.txt]
+    run_initiate: true
+    # run_triangular: true
+    # run_back_substitution: true
+    run_firefly: true
+ - kira2math:
+    target:
+     - [UReduList.txt]

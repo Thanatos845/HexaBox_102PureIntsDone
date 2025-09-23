@@ -6,7 +6,7 @@ jobs:
       - {topologies: [hxb], sectors: [b1011101100000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b1011110100000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
-      - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111010110000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b0111011100000],r: 7,s: 4,d: 1}
       - {topologies: [hxb], sectors: [b1101011100000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b1101101100000],r: 7,s: 3,d: 1}
@@ -21,7 +21,7 @@ jobs:
       - {topologies: [hxb], sectors: [b1011101100000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b1011110100000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
-      - {topologies: [hxb], sectors: [b0111001110000],r: 7,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b0111010110000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b0111011100000],r: 7,s: 4,d: 1}
       - {topologies: [hxb], sectors: [b1101011100000],r: 7,s: 3,d: 1}
       - {topologies: [hxb], sectors: [b1101101100000],r: 7,s: 3,d: 1}

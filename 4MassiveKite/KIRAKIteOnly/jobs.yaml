@@ -1,0 +1,14 @@
+jobs:
+ - reduce_sectors:
+    reduce:
+      - {topologies: [KITE], sectors: [b111110000],r: 6,s: 3,d: 1}
+    select_integrals:
+     select_mandatory_list:
+      - [UReduList.txt]
+    run_initiate: true
+    # numerical_points: numerics
+    run_triangular: true
+    run_back_substitution: true
+ - kira2math:
+    target:
+     - [UReduList.txt]

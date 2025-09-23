@@ -1,0 +1,126 @@
+
+FireFly 2.0.3
+
+Launching 10 thread(s) with maximum bunch size 1
+Using seed 1758641224 for random numbers
+
+Promote to new prime field: F(9223372036854775783)
+Scanning for factors
+Time for the first black-box probe: 0.007894 s
+19 function(s) will be interpolated
+
+Scanning for factors in x1
+Maximum degree of x1: 3
+Potential factors in x1: 54
+Identified factors in x1: 15
+Starting reconstruction of coefficients
+Completed factor scan in x1 | 65 probes in total
+Required prime fields: 2
+Average time of the black-box probe: 0.010421 s
+
+Scanning for factors in x2
+Maximum degree of x2: 8
+Potential factors in x2: 104
+Identified factors in x2: 7
+Maximum degree of x2 after factoring: 7
+Starting reconstruction of coefficients
+Completed factor scan in x2 | 165 probes in total
+Required prime fields: 2
+Average time of the black-box probe: 0.009636 s
+
+Scanning for factors in x3
+Maximum degree of x3: 0
+No factors in x3: 0
+Completed factor scan in x3 | 176 probes in total
+Required prime fields: 1
+Average time of the black-box probe: 0.009603 s
+
+Scanning for factors in x4
+Maximum degree of x4: 9
+Potential factors in x4: 126
+Identified factors in x4: 19
+Starting reconstruction of coefficients
+Completed factor scan in x4 | 276 probes in total
+Required prime fields: 2
+Average time of the black-box probe: 0.009274 s
+
+Scanning for factors in x5
+Maximum degree of x5: 1
+Potential factors in x5: 9
+Identified factors in x5: 0
+Starting reconstruction of coefficients
+Completed factor scan in x5 | 304 probes in total
+Required prime fields: 1
+Average time of the black-box probe: 0.009134 s
+
+Scanning for factors in x6
+Maximum degree of x6: 8
+Potential factors in x6: 145
+Identified factors in x6: 18
+Starting reconstruction of coefficients
+Completed factor scan in x6 | 402 probes in total
+Required prime fields: 2
+Average time of the black-box probe: 0.008815 s
+
+Scanning for factors in x7
+Maximum degree of x7: 1
+Potential factors in x7: 16
+Identified factors in x7: 0
+Starting reconstruction of coefficients
+Completed factor scan in x7 | 429 probes in total
+Required prime fields: 1
+Average time of the black-box probe: 0.008722 s
+
+Scanning for factors in x8
+Maximum degree of x8: 1
+Potential factors in x8: 9
+Identified factors in x8: 0
+Starting reconstruction of coefficients
+Completed factor scan in x8 | 456 probes in total
+Required prime fields: 1
+Average time of the black-box probe: 0.008645 s
+
+Scanning for factors in x9
+Maximum degree of x9: 1
+Potential factors in x9: 9
+Identified factors in x9: 0
+Starting reconstruction of coefficients
+Completed factor scan in x9 | 483 probes in total
+Required prime fields: 1
+Average time of the black-box probe: 0.008602 s
+
+Scanning for factors in x10
+Maximum degree of x10: 12
+Potential factors in x10: 139
+Identified factors in x10: 1
+Starting reconstruction of coefficients
+Completed factor scan in x10 | 604 probes in total
+Required prime fields: 2
+Average time of the black-box probe: 0.008462 s
+
+Scanning for factors in x11
+Maximum degree of x11: 12
+Potential factors in x11: 147
+Identified factors in x11: 19
+Maximum degree of x11 after factoring: 11
+Starting reconstruction of coefficients
+Completed factor scan in x11 | 736 probes in total
+Required prime fields: 2
+Average time of the black-box probe: 0.008309 s
+
+Completed factor scan in 0.790174 s | 736 probes in total
+Average time of the black-box probe: 0.008309 s
+Found 79 factors in total
+Using optimized variable order: (x10, x11, x4, x6, x2, x1, x5, x7, x8, x9, x3)
+
+Scanning for a sparse shift
+Maximum degree of numerator: 17 | Maximum degree of denominator: 13
+Found a sparse shift after 180 scans
+Shift the variable tuple (0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0)
+Completed scan in 5.306349 s | 6645 probes in total
+Average time of the black-box probe: 0.007681 s
+
+Proceeding with interpolation over prime field F(9223372036854775783)
+Probe: 1855 | Done: 0 / 19 | Requires new prime field: 1 / 19
+Probe: 105515 | Done: 0 / 19 | Requires new prime field: 2 / 19
+Probe: 113461 | Done: 0 / 19 | Requires new prime field: 3 / 19

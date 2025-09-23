@@ -1,0 +1,304 @@
+10 Fermat/Blackbox instances will be run in parallel.
+The user defined environment variable FERMATPATH for Fermat is set:
+/home/dschiebe/installs/Ferl7/fer64
+The directories for the temporary files, result files and the sector mapping files are: 
+./tmp
+./results
+./sectormappings
+One variable is set to 1: {}
+Kira prepares topology: KITE and top level sector: 
+31 
+
+*****Integral ordering*************************************
+Kira will use the integral ordering: 1.
+With topology: KITE use intermediate permutation
+0 4 1 3 2 5 6 7 8 
+Following reductions will be performed for the topology: KITE
+Sector: 31 rmax: 6 smax: 3 dmax: 1 
+
+***********************************************************
+Find IBP LI and symmetry relations for the topology: KITE
+***********************************************************
+
+*****Search trivial sectors********************************
+read from: ./sectormappings/KITE/nonTrivialSector
+
+Non trivial sectors in total: 357
+Trivial sectors in total: 155
+( 0.004393 s )
+
+Search symmetry relations: 
+read from: ./sectormappings/KITE/canonica
+Number of symmetries read out: 227
+
+( 0.000263 s )
+***********************************************************
+Prepare Symmetries for the topology: KITE
+***********************************************************
+read from: ./sectormappings/KITE/sectorRelations
+Number of symmetries read out: 0
+read from: ./sectormappings/KITE/sectorSymmetries
+Number of symmetries read out: 17
+
+***********************************************************
+Kira starts the reduction of the topology: KITE
+***********************************************************
+
+***** Select equations recursively ************************
+length of mandatory list: 6
+Algebraic reconstruction is switched off.
+2663 independent coefficients
+directory to the masters: KITE
+Number of master integrals: 19
+KITE[1,1,0,0,1,0,0,0,0]  # 19
+KITE[1,0,1,0,1,0,0,0,0]  # 21
+KITE[0,1,1,0,1,0,0,0,0]  # 22
+KITE[-1,1,1,0,1,0,0,0,0] # 22
+KITE[1,1,1,0,1,0,0,0,0]  # 23
+KITE[1,1,1,-1,1,0,0,0,0] # 23
+KITE[1,1,1,0,1,-1,0,0,0] # 23
+KITE[1,0,1,1,0,0,0,0,0]  # 13
+KITE[1,0,1,1,1,0,0,0,0]  # 29
+KITE[0,1,1,1,0,0,0,0,0]  # 14
+KITE[1,1,1,1,0,0,0,0,0]  # 15
+KITE[1,1,1,1,-1,0,0,0,0] # 15
+KITE[0,1,1,1,1,0,0,0,0]  # 30
+KITE[1,1,1,1,1,0,0,0,0]  # 31
+KITE[1,1,1,1,1,-1,0,0,0] # 31
+KITE[1,1,1,1,1,0,-1,0,0] # 31
+KITE[1,1,1,1,1,0,0,-1,0] # 31
+KITE[1,1,1,1,1,0,0,0,-1] # 31
+KITE[1,1,1,1,1,-2,0,0,0] # 31
+
+Number of selected equations to reduce: 0 equations
+Regenerate:
+
+Number of selected equations to reduce: 1789 equations
+( 0.756444 s )
+Algebraic reconstruction is switched off.
+
+***** Select equations recursively ************************
+length of mandatory list: 6
+
+***** Bring system in triangular form *********************
+
+Iterate the system until it is in triangular form: 
+iteration: 0; items left: 550; time: ( 0.027965 s )
+iteration: 1; items left: 354; time: ( 0.053481 s )
+iteration: 2; items left: 339; time: ( 0.076081 s )
+iteration: 3; items left: 288; time: ( 0.09462 s )
+iteration: 4; items left: 246; time: ( 0.112996 s )
+iteration: 5; items left: 202; time: ( 0.129651 s )
+iteration: 6; items left: 182; time: ( 0.148188 s )
+iteration: 7; items left: 153; time: ( 0.163257 s )
+iteration: 8; items left: 128; time: ( 0.182298 s )
+iteration: 9; items left: 112; time: ( 0.195197 s )
+iteration: 10; items left: 105; time: ( 0.208994 s )
+iteration: 11; items left: 98; time: ( 0.220684 s )
+iteration: 12; items left: 89; time: ( 0.236539 s )
+iteration: 13; items left: 83; time: ( 0.249151 s )
+iteration: 14; items left: 77; time: ( 0.264926 s )
+iteration: 15; items left: 70; time: ( 0.27801 s )
+iteration: 16; items left: 61; time: ( 0.297431 s )
+iteration: 17; items left: 54; time: ( 0.316091 s )
+iteration: 18; items left: 50; time: ( 0.338179 s )
+iteration: 19; items left: 44; time: ( 0.369787 s )
+iteration: 20; items left: 39; time: ( 0.432624 s )
+iteration: 21; items left: 36; time: ( 0.461254 s )
+iteration: 22; items left: 32; time: ( 0.510134 s )
+iteration: 23; items left: 32; time: ( 0.55473 s )
+iteration: 24; items left: 27; time: ( 0.587566 s )
+iteration: 25; items left: 26; time: ( 0.620572 s )
+iteration: 26; items left: 21; time: ( 0.703131 s )
+iteration: 27; items left: 20; time: ( 0.754312 s )
+iteration: 28; items left: 16; time: ( 0.792609 s )
+iteration: 29; items left: 15; time: ( 0.837841 s )
+iteration: 30; items left: 14; time: ( 0.888318 s )
+iteration: 31; items left: 14; time: ( 0.961678 s )
+iteration: 32; items left: 14; time: ( 1.19503 s )
+iteration: 33; items left: 13; time: ( 1.50319 s )
+iteration: 34; items left: 10; time: ( 1.52457 s )
+iteration: 35; items left: 9; time: ( 1.55239 s )
+iteration: 36; items left: 9; time: ( 1.58676 s )
+iteration: 37; items left: 9; time: ( 1.60822 s )
+iteration: 38; items left: 7; time: ( 1.63619 s )
+iteration: 39; items left: 7; time: ( 1.66807 s )
+iteration: 40; items left: 6; time: ( 1.72471 s )
+iteration: 41; items left: 6; time: ( 1.73268 s )
+iteration: 42; items left: 5; time: ( 1.74266 s )
+iteration: 43; items left: 5; time: ( 1.76329 s )
+iteration: 44; items left: 5; time: ( 1.90291 s )
+iteration: 45; items left: 5; time: ( 2.34377 s )
+iteration: 46; items left: 4; time: ( 2.37566 s )
+iteration: 47; items left: 3; time: ( 2.41691 s )
+iteration: 48; items left: 3; time: ( 2.42788 s )
+iteration: 49; items left: 3; time: ( 2.43831 s )
+iteration: 50; items left: 3; time: ( 2.49351 s )
+iteration: 51; items left: 2; time: ( 2.50654 s )
+iteration: 52; items left: 2; time: ( 2.53742 s )
+iteration: 53; items left: 2; time: ( 2.54524 s )
+iteration: 54; items left: 2; time: ( 2.66903 s )
+iteration: 55; items left: 1; time: ( 2.66996 s )
+iteration: 56; items left: 1; time: ( 2.67079 s )
+iteration: 57; items left: 1; time: ( 2.6713 s )
+iteration: 58; items left: 1; time: ( 2.67223 s )
+iteration: 59; items left: 1; time: ( 2.67275 s )
+iteration: 60; items left: 1; time: ( 2.67322 s )
+iteration: 61; items left: 1; time: ( 2.67373 s )
+iteration: 62; items left: 1; time: ( 2.67418 s )
+iteration: 63; items left: 1; time: ( 2.67494 s )
+iteration: 64; items left: 1; time: ( 2.67544 s )
+iteration: 65; items left: 1; time: ( 2.67599 s )
+iteration: 66; items left: 1; time: ( 2.67687 s )
+iteration: 67; items left: 1; time: ( 2.67742 s )
+iteration: 68; items left: 1; time: ( 2.67798 s )
+iteration: 69; items left: 1; time: ( 2.67871 s )
+iteration: 70; items left: 1; time: ( 2.67921 s )
+iteration: 71; items left: 1; time: ( 2.67985 s )
+iteration: 72; items left: 1; time: ( 2.68145 s )
+iteration: 73; items left: 1; time: ( 2.68378 s )
+iteration: 74; items left: 1; time: ( 2.68638 s )
+iteration: 75; items left: 1; time: ( 2.69665 s )
+iteration: 76; items left: 1; time: ( 2.73522 s )
+iteration: 77; items left: 1; time: ( 2.74085 s )
+iteration: 78; items left: 1; time: ( 2.74539 s )
+iteration: 79; items left: 1; time: ( 2.75294 s )
+iteration: 80; items left: 1; time: ( 2.75647 s )
+iteration: 81; items left: 1; time: ( 2.76012 s )
+iteration: 82; items left: 1; time: ( 2.7639 s )
+iteration: 83; items left: 1; time: ( 2.77061 s )
+iteration: 84; items left: 1; time: ( 2.77542 s )
+iteration: 85; items left: 1; time: ( 2.78428 s )
+iteration: 86; items left: 1; time: ( 2.79495 s )
+iteration: 87; items left: 1; time: ( 2.82328 s )
+iteration: 88; items left: 1; time: ( 2.88553 s )
+iteration: 89; items left: 1; time: ( 2.89098 s )
+redundant: 0; insertions 4731
+All coefficients will be normalized
+
+Equations out of bounds rmax and smax: 1215
+Equations in the bounds rmax and smax: 574
+( 4.15759 s )
+
+Write the triangular system to ./tmp/ on hard disk
+(--> ./tmp/KITE/VERconfig, ./tmp/KITE/VER###) 
+
+Triangular form completed after ( 4.44725 s )
+FIREFLY table created successfully
+Algebraic reconstruction is switched off.
+Equation table created successfully
+
+***** Run the back substitution ***********************
+
+Load all files from ./tmp/
+Take 574 equations to reduce 574 missing equations
+
+Back substitution: 
+
+
+Equations reduced: 3 / 574
+Kira committed results ( 0.0 s )
+
+
+Equations reduced: 3 / 574
+Kira committed results ( 0.0 s )
+
+
+Equations reduced: 27 / 574
+Kira committed results ( 0.0 s )
+
+
+Equations reduced: 32 / 574
+Kira committed results ( 0.0 s )
+
+
+Equations reduced: 66 / 574
+Kira committed results ( 0.1 s )
+
+
+Equations reduced: 129 / 574
+Kira committed results ( 0.2 s )
+
+
+Equations reduced: 132 / 574
+Kira committed results ( 0.2 s )
+
+
+Equations reduced: 154 / 574
+Kira committed results ( 0.5 s )
+
+
+Equations reduced: 210 / 574
+Kira committed results ( 2.6 s )
+
+
+Equations reduced: 447 / 574
+Kira committed results ( 29.2 s )
+
+
+Equations reduced: 574 / 574
+Kira committed results ( 73.5 s )
+
+574 equations were reduced
+
+*****Master integrals***********************************
+KITE[1,1,0,0,1,0,0,0,0]  # 19
+KITE[1,0,1,0,1,0,0,0,0]  # 21
+KITE[0,1,1,0,1,0,0,0,0]  # 22
+KITE[-1,1,1,0,1,0,0,0,0] # 22
+KITE[1,1,1,0,1,0,0,0,0]  # 23
+KITE[1,1,1,-1,1,0,0,0,0] # 23
+KITE[1,1,1,0,1,-1,0,0,0] # 23
+KITE[1,0,1,1,0,0,0,0,0]  # 13
+KITE[1,0,1,1,1,0,0,0,0]  # 29
+KITE[0,1,1,1,0,0,0,0,0]  # 14
+KITE[1,1,1,1,0,0,0,0,0]  # 15
+KITE[1,1,1,1,-1,0,0,0,0] # 15
+KITE[0,1,1,1,1,0,0,0,0]  # 30
+KITE[1,1,1,1,1,0,0,0,0]  # 31
+KITE[1,1,1,1,1,-1,0,0,0] # 31
+KITE[1,1,1,1,1,0,-1,0,0] # 31
+KITE[1,1,1,1,1,0,0,-1,0] # 31
+KITE[1,1,1,1,1,0,0,0,-1] # 31
+KITE[1,1,1,1,1,-2,0,0,0] # 31
+
+Total number of master integrals: 19
+
+*****Not selected integrals******
+KITE[1,0,3,0,1,0,0,0,0]  # 21
+KITE[1,0,2,0,2,0,0,0,0]  # 21
+KITE[2,0,2,0,1,0,0,0,0]  # 21
+KITE[3,0,1,0,1,0,0,0,0]  # 21
+KITE[1,0,3,-1,1,0,0,0,0] # 21
+KITE[3,0,1,-1,1,0,0,0,0] # 21
+KITE[3,0,1,0,1,0,0,-1,0] # 21
+KITE[0,1,3,0,1,0,0,0,0]  # 22
+KITE[0,3,1,0,1,0,0,0,0]  # 22
+KITE[0,3,1,-1,1,0,0,0,0] # 22
+KITE[1,1,3,0,1,0,0,0,0]  # 23
+KITE[1,1,3,-1,1,0,0,0,0] # 23
+KITE[1,0,1,3,0,0,0,0,0]  # 13
+KITE[1,0,3,1,1,0,0,0,0]  # 29
+KITE[3,0,1,1,1,0,0,0,0]  # 29
+KITE[1,-1,3,1,1,0,0,0,0] # 29
+KITE[0,1,1,3,0,0,0,0,0]  # 14
+KITE[0,3,1,1,1,0,0,0,0]  # 30
+
+Number of not selected integrals: 18
+( 73.5 s )
+One variable is set to 1: {}
+One variable is set to 1: {}
+The input directory is set to:
+./results
+symbol_to_replace_by_one: x in kinematics.yaml is not set. 
+Mass reconstruction is disabled.
+################################################
+kira2math: Reconstruct results
+################################################
+
+Algebraic reconstruction is switched off.
+This requested integral is a master integral: KITE[1,1,1,1,1,0,0,0,0] # 31
+unreduced integrals: 0.
+
+Total time:
+( 85.9 s )
