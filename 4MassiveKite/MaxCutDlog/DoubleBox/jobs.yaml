@@ -1,0 +1,9 @@
+jobs:
+ - reduce_sectors:
+    reduce:
+      - {topologies: [DB], sectors: [b111111100],r: 8,s: 4,d: 1}
+    select_integrals:
+     select_mandatory_list:
+      - {topologies: [DB], sectors: [b111111100],r: 8,s: 4,d: 1}
+    run_initiate: true
+    numerical_points: numerics
