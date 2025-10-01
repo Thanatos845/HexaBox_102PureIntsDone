@@ -1,0 +1,42 @@
+jobs:
+ - reduce_sectors:
+    reduce:
+      - {topologies: [hxb], sectors: [b0011001000000],r: 3,s: 0,d: 0}
+      - {topologies: [hxb], sectors: [b1001010000000],r: 3,s: 0,d: 0}
+      - {topologies: [hxb], sectors: [b0101001000000],r: 3,s: 0,d: 0}
+      - {topologies: [hxb], sectors: [b0101010000000],r: 3,s: 0,d: 0}
+      - {topologies: [hxb], sectors: [b1001000100000],r: 3,s: 0,d: 0}
+      - {topologies: [hxb], sectors: [b0101000100000],r: 5,s: 0,d: 2}
+      - {topologies: [hxb], sectors: [b0011000100000],r: 5,s: 0,d: 2}
+      - {topologies: [hxb], sectors: [b0011001100000],r: 5,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0011010100000],r: 5,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0101001100000],r: 5,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0101010100000],r: 5,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b1001010100000],r: 5,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0111001100000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b0111010100000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b1101010100000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b1001000100000],r: 5,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101000100000],r: 6,s: 1,d: 3}
+      - {topologies: [hxb], sectors: [b0011000100000],r: 6,s: 1,d: 3}
+      - {topologies: [hxb], sectors: [b0011001100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0011010100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101001100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0101010100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1001010100000],r: 6,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0111001100000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b0111000100000],r: 6,s: 0,d: 2}
+      - {topologies: [hxb], sectors: [b0111010100000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1101010100000],r: 7,s: 1,d: 2}
+      - {topologies: [hxb], sectors: [b1101000100000],r: 6,s: 0,d: 2}
+      - {topologies: [hxb], sectors: [b0011001000000],r: 4,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b1001010000000],r: 4,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0101001000000],r: 4,s: 1,d: 1}
+      - {topologies: [hxb], sectors: [b0101010000000],r: 4,s: 1,d: 1}
+    select_integrals:
+     select_mandatory_list:
+      - [UReduList.txt]
+      - [ReduList.txt]
+    run_initiate: true
+    numerical_points: numerics
+    run_firefly: true

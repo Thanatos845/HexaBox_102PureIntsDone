@@ -50,6 +50,7 @@ p4diffopConst=Table[Expand[p[i]diffOpAnsatz[p[1]+p[2]+p[3]+p[4]+p[5]+p[6]]/.p4co
 EQNSystemDiffOp=Join[diffOpConst,p4diffopConst];
 solsetDiffOp=Cases[EQNSystemDiffOp,_da,Infinity]//DeleteDuplicates;
 solsetDiffOp=Join[solsetDiffOp,{ds[S16]}]
+changeAuxVar[var_] := Module[{},solsetDiffOp=solsetDiffOp/.{S16->var};];
 
 
 (* ::Title:: *)
