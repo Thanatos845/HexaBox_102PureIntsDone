@@ -20,5 +20,5 @@
       - {topologies: [hxb], sectors: [b0111001100000],r: 6,s: 0,d: 1}
       - {topologies: [hxb], sectors: [b0111010100000],r: 6,s: 0,d: 1}
       - {topologies: [hxb], sectors: [b1101010100000],r: 6,s: 0,d: 1}
-      - {topologies: [hxb], sectors: [b1011001100000],r: 6,s: 0,d: 1}
-      - {topologies: [hxb], sectors: [b1011010100000],r: 6,s: 0,d: 1}
+      - {topologies: [hxb], sectors: [b1011001100000],r: 6,s: 3,d: 1}
+      - {topologies: [hxb], sectors: [b1011010100000],r: 6,s: 3,d: 1}

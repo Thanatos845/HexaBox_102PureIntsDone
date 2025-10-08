@@ -35,9 +35,9 @@ SixPointGram=Expand[Det[Table[momenta[[i]] momenta[[j]],{i,1,5},{j,1,5}]/.kinema
 GetRandomPT[NMin_,NMax_]:=Module[{tPoint,tPointReplacements,sqrtSetT,roots,NMAXIT,s16Sol},    
     NMAXIT=1000000;
     For[i = 0, i < NMAXIT, i++,
-		tPoint=RandomInteger[{NMin,NMax},Length[DeleteElements[invariants,{s16}]]];
-		tPointReplacements=Thread[Rule[DeleteElements[invariants,{s16}],tPoint]];
-		s16Sol=Solve[Expand[SixPointGram/.tPointReplacements,Modulus->$P]==0,s16,Modulus->$P];
+		tPoint=RandomInteger[{NMin,NMax},Length[DeleteElements[invariants,{auxvar}]]];
+		tPointReplacements=Thread[Rule[DeleteElements[invariants,{auxvar}],tPoint]];
+		s16Sol=Solve[Expand[SixPointGram/.tPointReplacements,Modulus->$P]==0,auxvar,Modulus->$P];
 		If[Length[s16Sol]>0, 
 		sqrtSetT = Expand[sqrtSet /. Join[tPointReplacements,{s16Sol[[1,1]]}], Modulus -> $P];
         roots = JacobiSymbol[#, $P] & /@ sqrtSetT;
