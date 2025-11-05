@@ -77,6 +77,35 @@ AnsatzPowersNumi=FrobeniusSolve[{1,1},MaxPower];
 	fit=Together[Ansatz/.solrule]//ExpandDenominator//ExpandNumerator;
 	Return[Expand[fit,Modulus->$P]]
 ]
+powerReconstruct[pars_,FitVecIn_,MaxPower_]:=Module[{pars2,AnsatzPowersNumi,FitVec,AnsatzPowersDeno,MatNumiPart,onevc,parsCutOne,reconstructedFit,AnsatzPowersDenoOne,
+fit,solrule,MatDenoPart,Solset,FinalMat,sol3,Ansatz},
+AnsatzPowersNumi=FrobeniusSolve[{1,1},MaxPower];
+	AnsatzPowersDeno=FrobeniusSolve[{1,1},MaxPower];
+	pars2=pars/.{x_Integer:>{x,1}};
+	(*MatNumiPart=Parallelize@Outer[m31ExpDot,pars2,AnsatzPowersNumi,1];*)
+
+	MatNumiPart=Table[Table[Times@@PowerMod[pars2[[i]],AnsatzPowersNumi[[q]],$P],{q,1,Length[AnsatzPowersNumi]}],{i,1,Length[pars2]}];
+	(*Table[Times@@PowerMod[pars2[[1]],AnsatzPowersNumi[[q]],$P],{q,1,Length[AnsatzPowersNumi]}]//Echo;*)
+	
+	FitVec=Expand[-FitVecIn,Modulus->$P];
+	onevc=Table[{1},MaxPower+1];
+	parsCutOne=MapThread[Join,{pars2,Transpose[{FitVec}]}];
+	AnsatzPowersDenoOne=MapThread[Join,{AnsatzPowersDeno,onevc}];
+
+	(*MatDenoPart=Parallelize@Outer[m31ExpDot,parsCutOne,AnsatzPowersDenoOne,1];*)
+	
+	MatDenoPart=Table[Table[Times@@PowerMod[parsCutOne[[i]],AnsatzPowersDenoOne[[j]],$P],{j,1,Length[AnsatzPowersDenoOne]}],{i,1,Length[parsCutOne]}];
+	
+	FinalMat=Expand[MapThread[Join,{MatNumiPart,MatDenoPart}],Modulus->$P];
+
+	
+	sol3=NullSpace[FinalMat,Modulus->$P];
+	Ansatz=Sum[fac[n]t^n,{n,0,MaxPower}]/Sum[fac[n+MaxPower+1]t^n,{n,0,MaxPower}];
+	Solset=Cases[Ansatz,fac[___],Infinity];
+	solrule=Thread[Rule[Solset,sol3[[1]]]];
+	fit=Together[Ansatz/.solrule]//ExpandDenominator//ExpandNumerator;
+	Return[Expand[fit,Modulus->$P]]
+]
 
 
 GenerateAnsatz[vars_,degree_]:=Module[{Ansatz,AnsatzPowers},
@@ -96,6 +125,7 @@ Module[{variables,fitvec,flattpos,PowerMatrixUsed,AnsatzNumi,AnsatzDeno,varsA,An
 	Return[0];
 	];
 	fitvec=fitvecIN;
+	If[ Length[DeleteDuplicates[fitvec]]==1,Return[DeleteDuplicates[fitvec][[1]]]];
 	variables=invariants[[2;;]];
 	varsA=vars;
 	AnsatzPowersNumi=FrobeniusSolve[Table[1,{i,1,Length[varsA]}],exp1];
@@ -152,7 +182,7 @@ getEvenDlogs[letters_,RationalFuncs_] :=
   eqns = eqns // Together // Numerator;
   eqns = CoefficientRules[eqns, vars];
   eqns = Flatten[eqns][[All, 2]] == 0;
-  solution = Together[Solve[eqns, solveSet]];
+  solution = Together[Solve[eqns, solveSet]]//Echo;
   Return[{letters, solution[[1, All, 2]]}];
   ]
 FancyDeleteDuplicates[delset_] := Module[{size, i, j, delset2, factor},

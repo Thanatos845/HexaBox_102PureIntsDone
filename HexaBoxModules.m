@@ -77,9 +77,9 @@ DeleteOldKiraRun[]:=Module[{},
 	Quiet[DeleteDirectory[FileNameJoin[{Directory[],"KIRA/sectormappings"}],DeleteContents -> True]];
 	Quiet[DeleteDirectory[FileNameJoin[{Directory[],"KIRA/results"}],DeleteContents -> True]];
 	Quiet[DeleteDirectory[FileNameJoin[{Directory[],"KIRA/splitres"}],DeleteContents -> True]];
-	Quiet[DeleteFile[FileNameJoin[{Directory[],"KIRA/numerics"}]]];
 ];
 WriteNumericsFile[tPointReplacements_]:=Module[{vars,vals,file,varsString,valsString},
+	Quiet[DeleteFile[FileNameJoin[{Directory[],"KIRA/numerics"}]]];
 	vars=tPointReplacements[[All,1]];
 	vals=tPointReplacements[[All,2]];
 	varsString=StringDrop[ToString[StringJoin[Table[StringJoin[ToString[vars[[i]]]," "],{i,1,Length[vars]}]]],-1];
