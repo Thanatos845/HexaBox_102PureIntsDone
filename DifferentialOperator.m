@@ -49,8 +49,8 @@ diffOpConst=Expand[Thread[diffOpAnsatz[operatorConstraints]]/.p4conv];
 p4diffopConst=Table[Expand[p[i]diffOpAnsatz[p[1]+p[2]+p[3]+p[4]+p[5]+p[6]]/.p4conv],{i,1,4}];
 EQNSystemDiffOp=Join[diffOpConst,p4diffopConst];
 solsetDiffOp=Cases[EQNSystemDiffOp,_da,Infinity]//DeleteDuplicates;
-(*solsetDiffOp={da[1,1],da[1,5],da[1,6],da[2,1],da[2,2],da[2,4],da[2,5],da[2,6],da[3,1],da[3,4],da[3,5],da[3,6],da[4,1],da[4,2],da[4,3],da[4,4],da[4,5],da[4,6]}*)
-solsetDiffOp={da[1,1],da[1,5],da[1,6],da[2,1],da[3,3],da[2,4],da[3,2],da[1,3],da[3,1],da[3,4],da[3,5],da[1,4],da[4,1],da[4,2],da[4,3],da[2,3],da[4,5],da[1,2]}
+solsetDiffOp={da[1,1],da[1,5],da[1,6],da[2,1],da[2,2],da[2,4],da[2,5],da[2,6],da[3,1],da[3,4],da[3,5],da[3,6],da[4,1],da[4,2],da[4,3],da[4,4],da[4,5],da[4,6]}
+(*solsetDiffOp={da[1,1],da[1,5],da[1,6],da[2,1],da[3,3],da[2,4],da[3,2],da[1,3],da[3,1],da[3,4],da[3,5],da[1,4],da[4,1],da[4,2],da[4,3],da[2,3],da[4,5],da[1,2]}*)
 solsetDiffOp=Join[solsetDiffOp,{ds[S16]}]
 changeAuxVar[var_] := Module[{},solsetDiffOp=solsetDiffOp/.{S16->var};];
 
@@ -61,22 +61,20 @@ changeAuxVar[var_] := Module[{},solsetDiffOp=solsetDiffOp/.{S16->var};];
 
 getDifferentialOperator[tpoint_] := Module[{differentialOperator2,EQNSystemDiffOpT,solDiffOp,kinematicsT,mandelstamScalarProductsT,NullsetDiffOp,NullRulesDiffOp,differentialOperator},
 (*	solsetDiffOp={da[1,1],da[1,5],da[1,6],da[2,1],da[2,2],da[2,4],da[2,5],da[2,6],da[3,1],da[3,4],da[3,5],da[3,6],da[4,1],da[4,2],da[4,3],da[4,4],da[4,5],da[4,6]};
-	solsetDiffOp=Join[solsetDiffOp,{ds[S16]}];
-	*)
+	solsetDiffOp=Join[solsetDiffOp,{ds[S16]}];*)
+	
 	kinematicsT=Expand[kinematics/.tpoint,Modulus->$P];
 	mandelstamScalarProductsT=Expand[mandelstamScalarProducts/.tpoint,Modulus->$P];
 	EQNSystemDiffOpT=Expand[EQNSystemDiffOp/.kinematicsT/.mandelstamScalarProductsT,Modulus->$P];
 	Thread[EQNSystemDiffOpT==0];
 	solDiffOp=Quiet[Solve[Thread[EQNSystemDiffOpT==0],solsetDiffOp,Modulus->$P][[1]]];
 	NullsetDiffOp=Cases[solDiffOp[[All,2]],_da,Infinity]//DeleteDuplicates;
-(*	NullsetDiffOp//Echo;
-	solDiffOp//Echo;*)
 	NullRulesDiffOp=Thread[Rule[NullsetDiffOp,0]];
 	solDiffOp=Join[solDiffOp/.NullRulesDiffOp,NullRulesDiffOp];
 	differentialOperator=diffOpAnsatz2/.solDiffOp;
 	
 	Return[differentialOperator];
-	(*solsetDiffOp={da[1,1],da[1,5],da[1,6],da[2,1],da[3,3],da[2,4],da[3,2],da[1,3],da[3,1],da[3,4],da[3,5],da[1,4],da[4,1],da[4,2],da[4,3],da[2,3],da[4,5],da[1,2]};
+(*	solsetDiffOp={da[1,1],da[1,5],da[1,6],da[2,1],da[3,3],da[2,4],da[3,2],da[1,3],da[3,1],da[3,4],da[3,5],da[1,4],da[4,1],da[4,2],da[4,3],da[2,3],da[4,5],da[1,2]};
 	solsetDiffOp=Join[solsetDiffOp,{ds[S16]}];
 	
 	kinematicsT=Expand[kinematics/.tpoint,Modulus->$P];
@@ -85,13 +83,11 @@ getDifferentialOperator[tpoint_] := Module[{differentialOperator2,EQNSystemDiffO
 	Thread[EQNSystemDiffOpT==0];
 	solDiffOp=Quiet[Solve[Thread[EQNSystemDiffOpT==0],solsetDiffOp,Modulus->$P][[1]]];
 	NullsetDiffOp=Cases[solDiffOp[[All,2]],_da,Infinity]//DeleteDuplicates;
-(*	NullsetDiffOp//Echo;
-	solDiffOp//Echo;*)
 	NullRulesDiffOp=Thread[Rule[NullsetDiffOp,0]];
 	solDiffOp=Join[solDiffOp/.NullRulesDiffOp,NullRulesDiffOp];
 	differentialOperator2=diffOpAnsatz2/.solDiffOp;
-*)
-	Return[Expand[differentialOperator-differentialOperator2,Modulus->$P]];
+
+	Return[Expand[differentialOperator-differentialOperator2,Modulus->$P]];*)
 ];
 
 
